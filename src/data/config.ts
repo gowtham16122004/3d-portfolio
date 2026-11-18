@@ -1,44 +1,39 @@
 const config = {
-  title: "Naresh Khatri | Full-Stack Developer",
+  title: "Gowtham Pogala | Java Full Stack & AI Developer",
   description: {
-    long: "Explore the portfolio of Naresh, a full-stack developer and creative technologist specializing in interactive web experiences, 3D animations, and innovative projects. Discover my latest work, including Coding Ducks, The Booking Desk, Ghostchat, and more. Let's build something amazing together!",
+    long: "Portfolio of Gowtham Pogala, a Java full stack developer and B.Tech AI & Data Science graduate. Explore my projects in RAG, LLM applications, n8n automation and Spring Boot.",
     short:
-      "Discover the portfolio of Naresh, a full-stack developer creating interactive web experiences and innovative projects.",
+      "Gowtham Pogala is a Java full stack developer building AI applications, including RAG assistants and automation workflows.",
   },
   keywords: [
-    "Naresh",
-    "portfolio",
-    "full-stack developer",
-    "creative technologist",
-    "web development",
-    "3D animations",
-    "interactive websites",
-    "Coding Ducks",
-    "The Booking Desk",
-    "Ghostchat",
-    "web design",
-    "GSAP",
+    "Gowtham Pogala",
+    "Java Full Stack Developer",
+    "Spring Boot",
     "React",
-    "Next.js",
-    "Framer Motion",
+    "RAG",
+    "AI Developer",
+    "n8n automation",
+    "portfolio",
   ],
-  author: "Naresh Khatri",
-  email: "naresh.khatri2345@gmail.com",
-  site: "https://nareshkhatri.dev",
+  author: "Gowtham Pogala",
+  email: "contactgowthamph@gmail.com",
+  // TODO: Update to production domain after deployment
+  site: "http://localhost:3000",
 
   // for github stars button
-  githubUsername: "naresh-khatri",
+  githubUsername: "gowtham16122004",
   githubRepo: "3d-portfolio",
 
   get ogImg() {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    twitter: "https://x.com/nothotchaddi",
-    linkedin: "https://www.linkedin.com/in/naresh-khatri/",
-    instagram: "https://www.instagram.com/hotchaddi",
-    facebook: "https://www.facebook.com/HotChaddi/",
-    github: "https://github.com/Naresh-Khatri",
+    // Retained placeholders because hero.tsx and social-media-icons.tsx require these properties
+    twitter: "https://x.com",
+    linkedin: "https://www.linkedin.com/in/gowtham-ph",
+    instagram: "https://www.instagram.com",
+    facebook: "https://www.facebook.com",
+    github: "https://github.com/gowtham16122004",
   },
 };
 export { config };

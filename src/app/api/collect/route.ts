@@ -3,13 +3,14 @@ import { UMAMI_ORIGIN } from "@/lib/umami";
 const OWN = new Set([
   "localhost",
   "127.0.0.1",
-  "nareshkhatri.dev",
-  "www.nareshkhatri.dev",
 ]);
 
 const ok = () => new Response(null, { status: 204 });
 
 export async function POST(req: Request) {
+  const websiteId = process.env.UMAMI_DEPLOY_SITE_ID;
+  if (!websiteId || !UMAMI_ORIGIN) return ok();
+
   let host: string;
   try {
     const raw = await req.text();
@@ -22,34 +23,31 @@ export async function POST(req: Request) {
   }
 
   if (!/^[a-z0-9.-]+\.[a-z]{2,}$/.test(host)) return ok();
-  if (OWN.has(host) || host.endsWith(".nareshkhatri.dev")) return ok();
+  if (OWN.has(host)) return ok();
 
   // Origin is browser-set, so it corroborates the reported host
   const origin = req.headers.get("origin") ?? "";
   console.log(`[analytics] host=${host} origin=${origin}`);
 
-  const websiteId = process.env.UMAMI_DEPLOY_SITE_ID;
-  if (websiteId && UMAMI_ORIGIN) {
-    try {
-      await fetch(`${UMAMI_ORIGIN}/api/send`, {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-          "user-agent": req.headers.get("user-agent") ?? "collect",
+  try {
+    await fetch(`${UMAMI_ORIGIN}/api/send`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "user-agent": req.headers.get("user-agent") ?? "collect",
+      },
+      body: JSON.stringify({
+        type: "event",
+        payload: {
+          website: websiteId,
+          hostname: host,
+          url: "/",
+          name: "deploy",
         },
-        body: JSON.stringify({
-          type: "event",
-          payload: {
-            website: websiteId,
-            hostname: host,
-            url: "/",
-            name: "deploy",
-          },
-        }),
-      });
-    } catch {
-      /* best-effort */
-    }
+      }),
+    });
+  } catch {
+    /* best-effort */
   }
 
   return ok();
