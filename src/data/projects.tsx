@@ -260,6 +260,12 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <span className="text-xs font-bold">Tika</span>,
   },
+  threejs: {
+    title: "Three.js",
+    bg: "black",
+    fg: "white",
+    icon: <span className="text-xs font-bold">Three</span>,
+  },
   todoStack: {
     title: "TODO-STACK",
     bg: "black",
@@ -498,6 +504,39 @@ const projects: Project[] = [
               // TODO-IMAGE: placeholder detail screenshot 2
               `${BASE_PATH}/kairo-dev-tracker-detail-2.jpg`,
             ]}
+          />
+        </div>
+      );
+    },
+  },
+  {
+    id: "my-portfolio",
+    category: "Personal Portfolio",
+    title: "My Portfolio",
+    src: `${BASE_PATH}/Portfolio Project/Portfolio.png`,
+    screenshots: ["Portfolio Project/Portfolio.png"],
+    skills: {
+      frontend: [
+        PROJECT_SKILLS.next,
+        PROJECT_SKILLS.react,
+        PROJECT_SKILLS.ts,
+        PROJECT_SKILLS.tailwind,
+        PROJECT_SKILLS.threejs,
+      ],
+      backend: [],
+    },
+    live: "/",
+    github: "https://github.com/gowtham16122004/3d-portfolio",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono">
+            An interactive 3D developer portfolio showcasing my projects, technical
+            skills, and experience through modern animations and responsive design.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+          <SlideShow
+            images={[`${BASE_PATH}/Portfolio Project/Portfolio.png`]}
           />
         </div>
       );

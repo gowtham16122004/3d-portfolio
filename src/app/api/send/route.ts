@@ -103,7 +103,7 @@ export async function POST(req: Request) {
         {
           error: "Unable to send your message. Please try again later.",
         },
-        { status: error.statusCode === 429 ? 429 : 502 },
+        { status: error.name === "rate_limit_exceeded" ? 429 : 502 },
       );
     }
 
