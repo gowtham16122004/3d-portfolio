@@ -1,209 +1,385 @@
+# 🚀 Gowtham Pogala | 3D Developer Portfolio
+
 <div align="center">
 
-# 🚀 3D Portfolio
+### Java Full Stack & AI Developer
 
-**A developer portfolio you can actually play with.** Press keys on a 3D keyboard, watch other visitors' cursors fly by, and chat with whoever's online.
+**An immersive, interactive developer portfolio built to showcase software engineering, artificial intelligence, and modern web development.**
 
-### [✨ Live Demo → nareshkhatri.dev](https://nareshkhatri.dev)
+A modern portfolio experience combining interactive 3D elements, fluid animations, responsive design, and a curated collection of real-world software projects.
 
-[![GitHub stars](https://img.shields.io/github/stars/Naresh-Khatri/3d-portfolio?style=flat&logo=github)](https://github.com/Naresh-Khatri/3d-portfolio/stargazers)
-[![Forks](https://img.shields.io/github/forks/Naresh-Khatri/3d-portfolio?style=flat&logo=github)](https://github.com/Naresh-Khatri/3d-portfolio/network/members)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Next.js 16](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Naresh-Khatri/3d-portfolio)
-
-<!-- swap for demo video: drag an .mp4 into the GitHub web editor, paste the user-attachments URL on its own line here -->
-![Portfolio Preview](https://github.com/Naresh-Khatri/3d-portfolio/blob/main/public/assets/projects-screenshots/portfolio/landing.png?raw=true)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Three.js](https://img.shields.io/badge/Three.js-000000?logo=threedotjs&logoColor=white)](https://threejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 </div>
 
-> **Free to use!** This portfolio is open source. If you use it, a credit/link back would be really appreciated 🙏
+---
 
-## ✨ Features
+## 📖 Overview
 
-- **Interactive 3D Keyboard** — Programmatically generated Chibi keyboard where each keycap represents a skill, revealing titles and descriptions on hover/press. Try colors, logos, and layouts in the [Chibi keycap customizer](https://chibi.nareshkhatri.dev/demo/keycaps).
-- **Live Multiplayer** — See other visitors' cursors in realtime, who's online, and chat with them ([details](#-realtime-features-optional))
-- **Buttery Animations** — GSAP + Framer Motion powered scroll, hover, and reveal animations
-- **Space Theme** — Floating particles on a dark canvas for a cosmic vibe
-- **Easter Eggs** — Open DevTools and follow the clues 🐱
-- **Light & Dark Mode** — Full theme support with cheeky disclaimer toasts
-- **Responsive** — Works across all screen sizes
-- **Contact Form** — Email delivery via Resend
-- **Analytics** _(optional)_ — Umami analytics integration
+This portfolio is designed to go beyond a traditional resume website.
 
-## 🛠️ Tech Stack
+It combines immersive 3D interactions, modern frontend technologies, and an organized project showcase to demonstrate my technical expertise and practical development experience.
 
-| Layer | Technologies |
+The website highlights my work across:
+
+- **Java Full Stack Development** — Building scalable applications and backend systems.
+- **Artificial Intelligence** — Developing AI-powered applications using LLMs, RAG, and intelligent automation.
+- **Frontend Engineering** — Creating responsive, accessible, and interactive web interfaces.
+- **Workflow Automation** — Integrating APIs, services, and automated workflows.
+- **Software Engineering** — Applying structured problem-solving and maintainable development practices.
+
+## ✨ Key Features
+
+| Feature | Description |
 |---|---|
-| **Framework** | Next.js 16.2.2, React 19.2.4, TypeScript |
-| **Styling** | Tailwind CSS, Shadcn UI, Aceternity UI |
-| **Animation** | GSAP, Framer Motion |
-| **3D** | @chibi3d/runtime, Three.js, React Three Fiber |
-| **Email** | Resend |
-| **Misc** | Lenis (smooth scroll), Zod, next-themes |
+| Interactive 3D Keyboard | Skill-based 3D keyboard with animated interactions and technology icons |
+| Immersive Interface | Dark cosmic theme with subtle particle effects and modern visual elements |
+| Smooth Animations | GSAP and Framer Motion animations for interactive transitions |
+| Project Showcase | Responsive project cards featuring screenshots, descriptions, and project links |
+| Resume Integration | Built-in PDF resume viewer and download functionality |
+| Contact Form | Contact form powered by Resend with input validation |
+| Responsive Design | Optimized layouts for desktop, tablet, and mobile devices |
+| Theme Switching | Light and dark mode support |
+| Performance-Focused | Next.js rendering and optimized frontend architecture |
+| Optional Realtime Features | Support for live cursors, online presence, and chat through a separate WebSocket backend |
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Technology Stack
+
+| Category | Technologies |
+|---|---|
+| Framework | Next.js 16, React 19 |
+| Programming | TypeScript, JavaScript |
+| Styling | Tailwind CSS, Shadcn UI, Aceternity UI |
+| 3D Graphics | Three.js, React Three Fiber, Chibi3D |
+| Animation | GSAP, Framer Motion |
+| Form Validation | Zod |
+| Email Integration | Resend |
+| Smooth Scrolling | Lenis |
+| Theme Management | next-themes |
+| Deployment | Vercel |
+
+---
+
+## 💼 Featured Projects
+
+### 01. CiteQuire — Multi-PDF RAG Assistant
+
+**Category:** AI / Retrieval-Augmented Generation
+
+An AI-powered document intelligence application designed to help users interact with multiple PDF documents using natural language.
+
+**Highlights:**
+- Multi-document PDF processing
+- Retrieval-augmented question answering
+- Context-aware AI responses
+- Document understanding and comparison
+- Interactive document management interface
+
+### 02. Vaani — Voice-First AI Assistant
+
+**Category:** AI Automation
+
+A multilingual voice-first AI assistant supporting Tamil and English commands.
+
+**Tech Stack:** n8n, Telegram Bot API, Whisper, Gemini API, Google Calendar, Google Sheets, Docker
+
+**Highlights:**
+- Voice-to-text processing
+- AI-powered intent classification
+- Reminder and scheduling automation
+- Expense logging
+- Integration with productivity services
+
+### 03. Kairo — Daily Routine & Productivity Tracker
+
+**Category:** Productivity Application
+
+A productivity-focused web application designed to help users manage daily routines, organize tasks, and monitor personal progress.
+
+**Highlights:**
+- Daily routine organization
+- Productivity tracking
+- Task management
+- Modern dashboard interface
+
+### 04. Resume Screener
+
+**Category:** AI / Resume Analysis
+
+**Status:** In Progress
+
+An AI-powered resume screening and job-matching platform designed to analyze resumes against job descriptions.
+
+**Tech Stack:** Python, LangChain, FAISS, FastAPI, React.js
+
+**Highlights:**
+- Resume parsing and analysis
+- Semantic similarity matching
+- Resume-to-job-description relevance scoring
+- Candidate ranking
+- ATS-focused resume evaluation
+
+### 05. Kairo Dev Tracker — Java Full Stack Roadmap
+
+**Category:** Developer Productivity / Education
+
+A structured learning roadmap application designed to support Java Full Stack development preparation.
+
+**Highlights:**
+- Java and Spring Boot learning roadmap
+- Topic-wise progress tracking
+- Structured development milestones
+- Interactive learning dashboard
+
+### 06. Personal 3D Portfolio
+
+**Category:** Web Development
+
+An interactive developer portfolio featuring immersive 3D elements, responsive layouts, animated project cards, and a modern interface.
+
+**Tech Stack:** Next.js, React, TypeScript, Tailwind CSS, Three.js, GSAP, Framer Motion
+
+**Highlights:**
+- Interactive 3D skill visualization
+- Modern responsive project showcase
+- Animated user interface
+- Integrated resume viewer
+- Contact form with Resend
+- Optimized developer experience
+
+---
+
+## 📁 Project Structure
+
+```text
+3d-portfolio/
+│
+├── public/
+│   └── assets/
+│       ├── backgrounds/
+│       ├── Portfolio/
+│       ├── Resume/
+│       │   └── Contact_Gowtham.pdf
+│       └── projects-screenshots/
+│
+├── src/
+│   ├── app/
+│   │   ├── api/
+│   │   │   └── send/
+│   │   └── ...
+│   │
+│   ├── components/
+│   │   ├── keyboard/
+│   │   └── ...
+│   │
+│   └── data/
+│       ├── config.ts
+│       ├── projects.tsx
+│       └── constants.ts
+│
+├── .env.example
+├── package.json
+└── README.md
+```
+
+---
+
+## ⚙️ Getting Started
 
 ### Prerequisites
 
-- Node.js 20.9+ for Next.js 16; use a current LTS release with pnpm 11
-- pnpm 11.20.0
+Make sure the following tools are installed:
 
-### Installation
+- Node.js 20.9 or later
+- pnpm 11
+- Git
+- VS Code or another preferred code editor
 
-1. **Clone the repository:**
+### 1. Clone the Repository
 
-    ```bash
-    git clone https://github.com/Naresh-Khatri/3d-portfolio.git
-    cd 3d-portfolio
-    ```
+```bash
+git clone https://github.com/gowtham16122004/folio-ai.git
+cd folio-ai
+```
 
-2. **Install dependencies:**
+### 2. Install Dependencies
 
-    ```bash
-    pnpm install
-    ```
+```bash
+pnpm install
+```
 
-3. **Set up environment variables:**
+### 3. Configure Environment Variables
 
-    Copy `.env.example` to `.env.local` and fill in the values:
+Create a `.env.local` file in the project root.
 
-    ```bash
-    cp .env.example .env.local
-    ```
+```env
+RESEND_API_KEY=your_resend_api_key
 
-    | Variable | Required | Description |
-    |---|---|---|
-    | `RESEND_API_KEY` | Yes | API key from [Resend](https://resend.com) for the contact form |
-    | `NEXT_PUBLIC_WS_URL` | No | WebSocket server URL for realtime features (cursors, chat, presence) |
-    | `UMAMI_DOMAIN` | No | Umami analytics script URL |
-    | `UMAMI_SITE_ID` | No | Umami website ID |
+# Optional
+NEXT_PUBLIC_WS_URL=
+UMAMI_DOMAIN=
+UMAMI_SITE_ID=
+```
 
-4. **Run the development server:**
+**Security:** Never commit `.env.local` or expose API keys in public repositories.
 
-    ```bash
-    pnpm dev
-    ```
+### 4. Start the Development Server
 
-5. Open [http://localhost:3000](http://localhost:3000) and see the magic ✨
+```bash
+pnpm dev -- -p 3005
+```
 
----
+Open your browser and navigate to:
 
-## Code checks
+`http://localhost:3005`
 
-Run these before opening a pull request:
+### 5. Run Code Quality Checks
 
 ```bash
 pnpm lint
 pnpm typecheck
 ```
 
-Next.js 16 no longer runs lint during builds. The ESLint CLI uses `eslint.config.mjs`. New React Compiler diagnostics for refs, immutability, effect state updates, and manual memoization report warnings while existing animation and realtime components are migrated. Hook ordering violations remain errors.
-
-Blog frontmatter requires a title, summary, and `publishedAt` date in `YYYY-MM-DD` format. Optional fields are `image`, `author`, and a list of `tags`. Invalid frontmatter raises a content error; unknown blog slugs return a 404.
-
-Files under `public/assets` can be replaced at the same URL and cache for one hour before revalidation. Next.js content-hashed static assets retain immutable caching.
-
 ---
 
-## 🎨 Make It Your Own
+## 🎨 Customization
 
-All personal info is centralized in [`src/data/config.ts`](src/data/config.ts). Edit this single file to rebrand the portfolio:
+### Personal Information
 
-```ts
-const config = {
-  title: "Your Name | Your Title",
-  description: {
-    long: "Your long description for SEO...",
-    short: "Your short description...",
-  },
-  keywords: ["your", "keywords"],
-  author: "Your Name",
-  email: "you@example.com",
-  site: "https://yoursite.com",
+Update:
 
-  // GitHub stars button in the header
-  githubUsername: "your-github-username",
-  githubRepo: "your-repo-name",
+`src/data/config.ts`
 
-  social: {
-    twitter: "https://x.com/you",
-    linkedin: "https://linkedin.com/in/you",
-    instagram: "https://instagram.com/you",
-    facebook: "https://facebook.com/you",
-    github: "https://github.com/you",
-  },
-};
+This file controls:
+
+- Developer name and professional title
+- Portfolio metadata
+- Contact email
+- Social media links
+- GitHub profile configuration
+- Website URL
+
+### Projects
+
+Update:
+
+`src/data/projects.tsx`
+
+Manage project titles, descriptions, screenshots, technologies, and external links.
+
+### Skills and 3D Keyboard
+
+Update:
+
+`src/data/constants.ts`
+
+Customize:
+
+- Technology names
+- Skill descriptions
+- Keycap colors
+- Technology icons
+- Keyboard shortcuts
+
+### Images and Assets
+
+Store static assets under:
+
+`public/assets/`
+
+Reference them using public-relative URLs.
+
+For example:
+
+```tsx
+<img
+  src="/assets/Resume/Contact_Gowtham.pdf"
+  alt="Resume"
+/>
 ```
 
-Other files you'll want to customize:
-
-| File | What to change |
-|---|---|
-| `src/data/projects.tsx` | Your projects, screenshots, descriptions, and tech stacks |
-| `src/data/constants.ts` | Skills list (name, description, icon) and work experience |
-| `public/assets/` | Your images, OG image, and project screenshots |
+For a PDF viewer, use an iframe or a dedicated document viewer rather than an image element.
 
 ---
 
-## ⌨️ Customize the 3D keyboard
+## 📬 Contact Form
 
-Try colors, logos, and layouts in the [Chibi keycap customizer](https://chibi.nareshkhatri.dev/demo/keycaps), then apply your choices to `SKILLS` in [`src/data/constants.ts`](src/data/constants.ts):
+The portfolio includes a contact form powered by Resend.
 
-- `keyboardColor`: keycap color, such as `"#ff9408"`.
-- `keyboardIcon`: copy an SVG URL from [thesvg.org](https://thesvg.org) and paste it here. You can also use a local file under `public/assets/keyboard/logos/`.
-- `label` and `shortDescription`: text shown when interacting with a key.
-- `shortcut`: optional physical key code, such as `"KeyQ"`. Keep shortcuts unique; defaults follow QWERTY letter order.
+**Contact email:** contactgowthamph@gmail.com
 
-The demo accepts logo names too, but `keyboardIcon` needs an image URL or local asset path. Without keyboard overrides, keys use the skill's `color` and `icon`.
+The API endpoint is located at:
 
-Keys follow the order of `SKILLS`. To change the default six columns, pass a second argument to `createKeyboardScene` in [`keyboard-scene.tsx`](src/components/keyboard/keyboard-scene.tsx). Rows adjust automatically to the skill count.
+`src/app/api/send/route.ts`
 
----
+The contact form includes:
 
-## 🔌 Realtime Features (Optional)
+- Server-side input validation
+- Email delivery integration
+- Basic rate limiting
+- Error handling
+- Reply-to support
 
-The portfolio supports optional realtime features powered by a **separate backend API**:
-
-- 🖱️ **Live cursors** — See other visitors' cursors in realtime
-- 👥 **Online presence** — Shows who's currently on the site
-- 💬 **Chat** — Live chat between visitors
-- **Zombie Survival** with multiplayer and leaderboards on the live site.
-
-These features activate automatically when the `NEXT_PUBLIC_WS_URL` environment variable is set. Without it, the portfolio works perfectly fine as a static site — no realtime features, no backend dependency.
-
-> [!NOTE]
-> The backend API is **not open source**. This is intentional! Too many people have cloned the portfolio and claimed they built it from scratch. The realtime server stays private to keep the live experience unique and make it stand out.
-
+**Production note:** Resend requires a verified sending domain for sending emails beyond its testing recipient restrictions. The in-memory rate limiter should also be replaced with a shared rate-limiting service for production deployments.
 
 ---
 
 ## 🚀 Deployment
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Naresh-Khatri/3d-portfolio)
+This portfolio is designed for deployment on Vercel.
 
-This site is deployed on **Vercel**. To deploy your own:
+1. Push the project to GitHub.
+2. Import the repository into Vercel.
+3. Configure the required environment variables.
+4. Deploy the application.
+5. Verify the contact form, resume viewer, and project links.
 
-1. Push your code to a GitHub repository
-2. Connect the repository to [Vercel](https://vercel.com)
-3. Add your environment variables in the Vercel dashboard
-4. Vercel handles the rest — automatic deployments on every push
-
----
-
-## 🤝 Contributing
-
-If you'd like to contribute or suggest improvements, feel free to open an issue or submit a pull request. All contributions are welcome!
+For production deployment, ensure that all API credentials and domain configurations are valid.
 
 ---
 
-## 📄 License
+## 👨‍💻 About Me
 
-This project is open source and available under the [MIT License](LICENSE).
+I'm **Gowtham Pogala**, a Java Full Stack & AI Developer passionate about building intelligent applications, scalable backend systems, and engaging web experiences.
 
-If you use this portfolio, a credit or link back to the [original repo](https://github.com/Naresh-Khatri/3d-portfolio) would be much appreciated ❤️
+My technical interests include artificial intelligence, retrieval-augmented generation, Java backend development, automation, and modern frontend engineering.
 
-Note on analytics: a deployed copy reports its own hostname once per browser (nothing else — no visitor, page, or referrer data) so I can see where the template gets used.
+I enjoy transforming technical ideas into functional applications that solve practical problems.
+
+---
+
+## 🌐 Connect With Me
+
+**GitHub:** [github.com/gowtham16122004](https://github.com/gowtham16122004)
+
+**Email:** contactgowthamph@gmail.com
+
+Explore my repositories to learn more about my projects and technical work.
+
+---
+
+## 📄 License and Attribution
+
+This portfolio is adapted from the open-source [3D Portfolio by Naresh Khatri](https://github.com/Naresh-Khatri/3d-portfolio), licensed under the MIT License.
+
+The project has been personalized with my own profile information, project portfolio, screenshots, assets, and configuration.
+
+The original MIT license and copyright notices are retained in accordance with the license terms.
+
+---
+
+<div align="center">
+
+### Built with Next.js, TypeScript, and Three.js
+
+**Gowtham Pogala — Java Full Stack & AI Developer**
+
+*Building intelligent applications and interactive digital experiences.*
+
+</div>
