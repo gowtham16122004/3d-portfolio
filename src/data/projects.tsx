@@ -277,14 +277,14 @@ export type Project = {
   skills: { frontend: Skill[]; backend: Skill[] };
   content: React.ReactNode | any;
   github?: string;
-  live: string;
+  live?: string;
 };
 
 const projects: Project[] = [
   {
     id: "folio-ai",
     category: "RAG Assistant",
-    title: "Folio.ai - Multi-PDF RAG Assistant",
+    title: "CiteQuire - Multi-PDF RAG Assistant",
     // TODO-IMAGE: placeholder image
     src: `${BASE_PATH}/folio-ai-main.jpg`,
     // TODO-IMAGE: placeholder images
@@ -303,10 +303,8 @@ const projects: Project[] = [
         PROJECT_SKILLS.groq,
       ],
     },
-    // TODO-LINK: placeholder demo URL
-    live: "https://vercel.com",
-    // TODO-LINK: placeholder repo URL
-    github: "https://github.com/gowtham16122004",
+    live: "https://citequire-ai-multi-pdf-rag-assistan.vercel.app/",
+    github: "https://github.com/gowtham16122004/citequire-ai-multi-pdf-rag-assistant",
     get content() {
       return (
         <div>
@@ -396,10 +394,7 @@ const projects: Project[] = [
       frontend: [PROJECT_SKILLS.todoStack],
       backend: [],
     },
-    // TODO-LINK: placeholder demo URL
-    live: "https://vercel.com",
-    // TODO-LINK: placeholder repo URL
-    github: "https://github.com/gowtham16122004",
+    github: "https://github.com/gowtham16122004/Kairos",
     get content() {
       return (
         <div>
@@ -448,10 +443,7 @@ const projects: Project[] = [
         PROJECT_SKILLS.apacheTika,
       ],
     },
-    // TODO-LINK: placeholder demo URL
-    live: "https://vercel.com",
-    // TODO-LINK: placeholder repo URL
-    github: "https://github.com/gowtham16122004",
+    github: "https://github.com/gowtham16122004/AI-Resume-RAG-System",
     get content() {
       return (
         <div>
@@ -490,10 +482,8 @@ const projects: Project[] = [
       frontend: [PROJECT_SKILLS.todoStack],
       backend: [],
     },
-    // TODO-LINK: placeholder demo URL
-    live: "https://vercel.com",
-    // TODO-LINK: placeholder repo URL
-    github: "https://github.com/gowtham16122004",
+    live: "https://kairodevtrack.netlify.app/",
+    github: "https://github.com/gowthampogala/Kairo-Dev-Track",
     get content() {
       return (
         <div>

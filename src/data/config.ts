@@ -28,11 +28,8 @@ const config = {
     return this.site + "/assets/seo/og-image.png";
   },
   social: {
-    // Retained placeholders because hero.tsx and social-media-icons.tsx require these properties
-    twitter: "https://x.com",
-    linkedin: "https://www.linkedin.com/in/gowtham-ph",
-    instagram: "https://www.instagram.com",
-    facebook: "https://www.facebook.com",
+    linkedin: "https://www.linkedin.com/in/gowtham-p-h-a782b3279",
+    instagram: "https://www.instagram.com/gowthxm_ph",
     github: "https://github.com/gowtham16122004",
   },
 };
