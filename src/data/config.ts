@@ -17,8 +17,12 @@ const config = {
   ],
   author: "Gowtham Pogala",
   email: "contactgowthamph@gmail.com",
-  // TODO: Update to production domain after deployment
-  site: "http://localhost:3000",
+  // Production domain: defaults to VERCEL_PROJECT_PRODUCTION_URL / NEXT_PUBLIC_SITE_URL or localhost for dev
+  site:
+    process.env.NEXT_PUBLIC_SITE_URL ||
+    (process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "http://localhost:3000"),
 
   // for github stars button
   githubUsername: "gowtham16122004",

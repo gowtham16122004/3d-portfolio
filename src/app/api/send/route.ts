@@ -5,6 +5,11 @@ import { z } from "zod";
 // Initialize Resend
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Sender email: Use RESEND_FROM_EMAIL if configured with a verified domain (e.g. "Gowtham <contact@yourdomain.com>"),
+// otherwise fall back to Resend's testing address (which only delivers to the account owner's registered address).
+const SENDER_EMAIL =
+  process.env.RESEND_FROM_EMAIL || "Portfolio <onboarding@resend.dev>";
+
 // Email recipient
 const CONTACT_EMAIL = "contactgowthamph@gmail.com";
 
@@ -84,7 +89,7 @@ export async function POST(req: Request) {
 
     // Send email using Resend
     const { data, error } = await resend.emails.send({
-      from: "Portfolio <onboarding@resend.dev>",
+      from: SENDER_EMAIL,
       to: [CONTACT_EMAIL],
       replyTo: email,
       subject: `New Portfolio Message from ${fullName}`,
