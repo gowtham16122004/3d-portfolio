@@ -1,5 +1,6 @@
 // order = keycap layout, 6 per row
 export enum SkillNames {
+  JAVA = "java",
   SPRINGBOOT = "springboot",
   PYTHON = "python",
   JS = "js",
@@ -16,6 +17,7 @@ export enum SkillNames {
   N8N = "n8n",
   VERCEL = "vercel",
   GEMINI = "gemini",
+  CLAUDE = "claude",
 }
 export type Skill = {
   id: number;
@@ -32,8 +34,18 @@ export type Skill = {
   shortcut?: string;
 };
 export const SKILLS: Record<SkillNames, Skill> = {
-  [SkillNames.SPRINGBOOT]: {
+  [SkillNames.JAVA]: {
     id: 1,
+    name: "java",
+    label: "Java",
+    shortDescription: "Core Java and JDBC. My main backend language.",
+    color: "#0074BD",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+    keyboardIcon: "/assets/keyboard/logos/java.svg",
+    keyboardColor: "#0074BD",
+  },
+  [SkillNames.SPRINGBOOT]: {
+    id: 2,
     name: "springboot",
     label: "Spring Boot",
     shortDescription: "REST APIs and database-backed backend apps.",
@@ -43,7 +55,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#6DB33F",
   },
   [SkillNames.PYTHON]: {
-    id: 2,
+    id: 3,
     name: "python",
     label: "Python",
     shortDescription: "FastAPI backends and AI/RAG work.",
@@ -53,7 +65,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#008fd5",
   },
   [SkillNames.JS]: {
-    id: 3,
+    id: 4,
     name: "js",
     label: "JavaScript",
     shortDescription: "Frontend logic and scripting.",
@@ -63,7 +75,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#ff9408",
   },
   [SkillNames.REACT]: {
-    id: 4,
+    id: 5,
     name: "react",
     label: "React",
     shortDescription: "Component-based UIs, used in Folio.ai.",
@@ -73,7 +85,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#00cce8",
   },
   [SkillNames.FASTAPI]: {
-    id: 5,
+    id: 6,
     name: "fastapi",
     label: "FastAPI",
     shortDescription: "Python backend for Folio.ai.",
@@ -83,7 +95,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#009688",
   },
   [SkillNames.NODEJS]: {
-    id: 6,
+    id: 7,
     name: "nodejs",
     label: "Node.js",
     shortDescription: "JavaScript runtime for scripts and REST services.",
@@ -93,7 +105,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#00952c",
   },
   [SkillNames.HTML5]: {
-    id: 7,
+    id: 8,
     name: "html5",
     label: "HTML5",
     shortDescription: "Semantic markup for responsive pages.",
@@ -103,7 +115,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#E34F26",
   },
   [SkillNames.CSS3]: {
-    id: 8,
+    id: 9,
     name: "css3",
     label: "CSS3",
     shortDescription: "Responsive layouts and styling.",
@@ -113,7 +125,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#663399",
   },
   [SkillNames.MYSQL]: {
-    id: 9,
+    id: 10,
     name: "mysql",
     label: "MySQL",
     shortDescription: "Relational schemas and CRUD via JDBC.",
@@ -123,7 +135,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#4479A1",
   },
   [SkillNames.DOCKER]: {
-    id: 10,
+    id: 11,
     name: "docker",
     label: "Docker",
     shortDescription: "Containerizing the Vaani n8n setup.",
@@ -133,7 +145,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#009fe8",
   },
   [SkillNames.GIT]: {
-    id: 11,
+    id: 12,
     name: "git",
     label: "Git",
     shortDescription: "Version control for all my projects.",
@@ -143,7 +155,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#ff4622",
   },
   [SkillNames.GITHUB]: {
-    id: 12,
+    id: 13,
     name: "github",
     label: "GitHub",
     shortDescription: "Repo hosting and collaboration.",
@@ -153,7 +165,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#24292e",
   },
   [SkillNames.POSTMAN]: {
-    id: 13,
+    id: 14,
     name: "postman",
     label: "Postman",
     shortDescription: "Testing and debugging REST APIs.",
@@ -163,7 +175,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#FF6C37",
   },
   [SkillNames.N8N]: {
-    id: 14,
+    id: 15,
     name: "n8n",
     label: "n8n",
     shortDescription: "Workflow automation behind Vaani.",
@@ -173,7 +185,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#FF91AC",
   },
   [SkillNames.VERCEL]: {
-    id: 15,
+    id: 16,
     name: "vercel",
     label: "Vercel",
     shortDescription: "Frontend deployment.",
@@ -183,7 +195,7 @@ export const SKILLS: Record<SkillNames, Skill> = {
     keyboardColor: "#171717",
   },
   [SkillNames.GEMINI]: {
-    id: 16,
+    id: 17,
     name: "gemini",
     label: "Gemini",
     shortDescription: "Embeddings and LLM API in Folio.ai and Vaani.",
@@ -191,6 +203,16 @@ export const SKILLS: Record<SkillNames, Skill> = {
     icon: "https://cdn.simpleicons.org/googlegemini/8E75B2",
     keyboardIcon: "/assets/keyboard/logos/gemini.svg",
     keyboardColor: "#8E75B2",
+  },
+  [SkillNames.CLAUDE]: {
+    id: 18,
+    name: "claude",
+    label: "Claude",
+    shortDescription: "Claude Code for AI-assisted development.",
+    color: "#d97757",
+    icon: "https://cdn.simpleicons.org/claude/D97757",
+    keyboardIcon: "/assets/keyboard/logos/claude.svg",
+    keyboardColor: "#d97757",
   },
 };
 
