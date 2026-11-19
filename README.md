@@ -17,6 +17,15 @@ A modern portfolio experience combining interactive 3D elements, fluid animation
 </div>
 
 ---
+## 🌐 Portfolio Preview
+
+<div align="center">
+
+![Gowtham Pogala - 3D Developer Portfolio](public/assets/Portfolio/portfolio-homepage.png)
+
+**Interactive 3D Portfolio | Java Full Stack & AI Developer**
+
+</div>
 
 ## 📖 Overview
 
