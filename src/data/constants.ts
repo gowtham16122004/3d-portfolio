@@ -240,6 +240,22 @@ export const EXPERIENCE: Experience[] = [
     // TODO-LINK // TODO-IMAGE // TODO-TECH-LIST: tech list / skills field not provided in prompt; kept empty to match shape without inventing
     skills: [],
   },
+  {
+    id: 2,
+    // TODO-DATE: start date not provided yet
+    periods: [{ start: "TODO-DATE", end: "Present" }],
+    title: "Freelance Web Developer",
+    company: "Independent",
+    description: [
+      "Acquired 3 local business clients through requirement gathering and customized website proposals.",
+      "Developed and delivered 3 responsive business websites for dental clinics, car detailing studios, and plumbing and electrical services.",
+      "Built mobile-friendly landing pages with reusable UI components using React.js, Tailwind CSS, and JavaScript.",
+      "Managed end-to-end development, client feedback, website deployment, and post-delivery updates.",
+    ],
+    // TODO-LINK // TODO-IMAGE: no URL or logo fields in Experience type
+    // TODO-TECH: Tailwind CSS requested but not in SkillNames / SKILLS; included React and JavaScript
+    skills: [SkillNames.REACT, SkillNames.JS],
+  },
 ];
 
 export const themeDisclaimers = {
